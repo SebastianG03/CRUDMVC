@@ -15,7 +15,7 @@ namespace CRUDMVC.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return View(Util.Utils.ListaProducto);
         }
 
         public IActionResult Privacy()
