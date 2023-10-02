@@ -25,6 +25,7 @@ namespace CRUDMVC.Controllers
             return View();
         }
 
+        // GET: ProductoController/Create
         [HttpPost]
         public IActionResult Create(Producto producto) 
         {
@@ -34,9 +35,14 @@ namespace CRUDMVC.Controllers
         }
 
         // GET: ProductoController/Edit/5
-        public IActionResult Edit(int id)
+        public IActionResult Edit(int IdProducto)
         {
-            return View();
+            Producto producto = Utils.ListaProducto.Find(x => x.IdProducto == IdProducto);
+            if (producto != null)
+            {
+                return View(producto);
+            }
+            return RedirectToAction("Index");
         }
 
         // GET: ProductoController/Delete/5
