@@ -6,6 +6,8 @@
     
 }
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+<link rel="stylesheet" href="../Views/styles.css" />
+
 <h1>@ViewData["Title"]</h1>
 <button type="button" class="btn btn-success" onclick="location.href='@Url.Action("Create", "Producto")'">Nuevo producto</button>
 <b\>
@@ -30,7 +32,7 @@
                     <td>@item.Cantidad</td>
                     <td>
                         <div class="btn-group" role="group" aria-label="Basic example">
-                            <button type="button" class="btn btn-secondary" title="Eliminar"><i class="bi bi-trash3"></i></button>
+                            <a asp-action="Delete" class="btn btn-secondary" title="Eliminar"><i class="bi bi-trash3"></i></a>
                             <button type="button" class="btn btn-secondary" title="Editar"><i class="bi bi-pencil-square"></i></button>
                             <button type="button" class="btn btn-secondary" title="Ver"><i class="bi bi-eye-fill"></i></button>
                         </div>

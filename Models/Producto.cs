@@ -11,6 +11,6 @@ namespace CRUDMVC.Models
         [Required]
         public int Cantidad { get; set;}
 
-        
+
     }
 }
