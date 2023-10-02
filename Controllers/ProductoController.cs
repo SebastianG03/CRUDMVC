@@ -8,7 +8,7 @@ namespace CRUDMVC.Controllers
         // GET: ProductoController
         public ActionResult Index()
         {
-            return View();
+            return View(Util.Utils.ListaProducto);
         }
 
         // GET: ProductoController/Details/5
