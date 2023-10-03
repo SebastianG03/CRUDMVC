@@ -42,7 +42,7 @@ namespace CRUDMVC.Controllers
             {
                 return View(producto);
             }
-            return RedirectToAction("Index");
+            return RedirectToAction("Edit");
         }
 
         // GET: ProductoController/Delete/5
