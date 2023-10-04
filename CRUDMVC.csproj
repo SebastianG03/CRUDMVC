@@ -13,4 +13,8 @@
     <None Remove="NewFolder1\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="css\" />
+  </ItemGroup>
+
 </Project>
