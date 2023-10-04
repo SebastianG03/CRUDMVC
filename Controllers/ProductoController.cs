@@ -14,9 +14,14 @@ namespace CRUDMVC.Controllers
         }
 
         // GET: ProductoController/Details/5
-        public IActionResult Details(int id)
+        public IActionResult Details(int IdProducto)
         {
-            return View(Utils.ListaProducto);
+            Producto producto = Utils.ListaProducto.Find(x => x.IdProducto == IdProducto);
+            if(producto != null)
+            {
+                return View(producto);
+            }
+            return RedirectToAction("Index");
         }
 
         // GET: ProductoController/Create
@@ -40,6 +45,22 @@ namespace CRUDMVC.Controllers
             Producto producto = Utils.ListaProducto.Find(x => x.IdProducto == IdProducto);
             if (producto != null)
             {
+                return View(producto);
+            }
+            return RedirectToAction("Edit");
+        }
+
+        [HttpPost]
+        public IActionResult Edit(int IdProducto, string Nombre, string Descripcion, int Cantidad)
+        {
+            Producto producto = Utils.ListaProducto.Find(x => x.IdProducto == IdProducto);
+            if (producto != null)
+            {
+                int i = Utils.ListaProducto.IndexOf(producto);
+                Utils.ListaProducto[i].Nombre = Nombre;
+                Utils.ListaProducto[i].Descripcion = Descripcion;
+                Utils.ListaProducto[i].Cantidad = Cantidad;
+
                 return View(producto);
             }
             return RedirectToAction("Edit");
