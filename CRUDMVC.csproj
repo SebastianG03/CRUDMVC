@@ -7,14 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="css\**" />
     <Compile Remove="NewFolder1\**" />
+    <Content Remove="css\**" />
     <Content Remove="NewFolder1\**" />
+    <EmbeddedResource Remove="css\**" />
     <EmbeddedResource Remove="NewFolder1\**" />
+    <None Remove="css\**" />
     <None Remove="NewFolder1\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="css\" />
   </ItemGroup>
 
   <ItemGroup>

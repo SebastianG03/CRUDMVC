@@ -5,7 +5,7 @@ VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CRUDMVC", "CRUDMVC.csproj", "{D1B0F772-51B7-4A1E-86B3-3C96EF5135B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIRest", "APIRest\APIRest.csproj", "{3C3AAC32-C15A-45E5-82F7-6A7E403AA093}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestAPI", "..\..\..\Desktop\RestAPICS-master\RestAPI.csproj", "{CA83F10C-D4C9-49CC-B800-E271FFCD86A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{D1B0F772-51B7-4A1E-86B3-3C96EF5135B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1B0F772-51B7-4A1E-86B3-3C96EF5135B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1B0F772-51B7-4A1E-86B3-3C96EF5135B8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3C3AAC32-C15A-45E5-82F7-6A7E403AA093}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3C3AAC32-C15A-45E5-82F7-6A7E403AA093}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3C3AAC32-C15A-45E5-82F7-6A7E403AA093}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3C3AAC32-C15A-45E5-82F7-6A7E403AA093}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA83F10C-D4C9-49CC-B800-E271FFCD86A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA83F10C-D4C9-49CC-B800-E271FFCD86A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA83F10C-D4C9-49CC-B800-E271FFCD86A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA83F10C-D4C9-49CC-B800-E271FFCD86A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
